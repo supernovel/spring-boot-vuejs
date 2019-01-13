@@ -23,6 +23,8 @@ target
 # logback
 logback.out.xml
 
+build/
+
 backend/build/
 backend/src/main/resources/public/
 backend/target
