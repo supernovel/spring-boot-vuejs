@@ -1,11 +1,9 @@
 language: java
 jdk:
 - oraclejdk8
-script: ./gradlew build jacocoTestReport
-before_install:
- - chmod +x gradlew
+script: gradle build jacocoTestReport
 after_success:
-- ./gradlew jacocoRootReport coveralls
+- gradle jacocoRootReport coveralls
 cache:
   directories:
   - node_modules

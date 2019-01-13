@@ -258,7 +258,7 @@ mvn clean install
 ```
 
 ```
-./gradlew clean build
+gradle clean build
 ```
 
 Run our complete Spring Boot App:
@@ -269,7 +269,7 @@ mvn --projects backend spring-boot:run
 Or
 
 ```
-./gradlew bootRun
+gradle bootRun
 ```
 
 Now go to http://localhost:8088/ and have a look at your first Vue.js Spring Boot App.
