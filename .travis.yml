@@ -1,11 +1,9 @@
 language: java
 jdk:
 - oraclejdk8
-before_install: 
-- gradle wrapper --gradle-version 5.1
-script: gradle build jacocoTestReport
+script: ./gradlew build jacocoTestReport
 after_success:
-- gradle jacocoRootReport coveralls
+- ./gradlew jacocoRootReport coveralls
 cache:
   directories:
   - node_modules
