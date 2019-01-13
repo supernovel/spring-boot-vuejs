@@ -32,7 +32,7 @@ dependencies {
     testImplementation 'io.rest-assured:rest-assured:3.2.0'
 }
 
-task copyResources(type: Copy, dependsOn: ':frontend:build') {
+task copyResources(type: Copy, dependsOn: ':frontend:npmBuild') {
     from("${rootProject.rootDir}/frontend/target/dist") {
         include 'static/**'
         include 'index.html'

@@ -75,7 +75,3 @@ coveralls {
     sourceDirs = subprojects.sourceSets.main.allSource.srcDirs.flatten()
     jacocoReportPath = "${buildDir}/reports/jacoco/jacocoRootReport/jacocoRootReport.xml"
 }
-
-task run {
-    tasks.getByPath(':backend:bootRun').exec()
-}

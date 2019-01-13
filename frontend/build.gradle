@@ -20,7 +20,12 @@ node {
   nodeModulesDir = file("${project.projectDir}")
 }
 
-task build(type: NpmTask, dependsOn: 'npmInstall') {
+clean {
+    delete "${project.projectDir}/target"
+    delete "${project.projectDir}/node_modules"
+}
+
+task npmBuild(type: NpmTask, dependsOn: 'npmInstall') {
     args = ['run', 'build']
 }
 
