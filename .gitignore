@@ -44,4 +44,3 @@ selenium-debug.log
 
 !.mvn/wrapper/maven-wrapper.jar
 .gradle
-gradle/
