@@ -1,7 +1,9 @@
 language: java
 jdk:
 - oraclejdk8
-script: mvn clean install jacoco:report coveralls:report
+script: ./gradlew build jacocoTestReport
+after_success:
+- ./gradlew jacocoRootReport coveralls
 cache:
   directories:
   - node_modules

@@ -23,8 +23,11 @@ target
 # logback
 logback.out.xml
 
+backend/build/
 backend/src/main/resources/public/
 backend/target
+
+frontend/build/
 frontend/dist/
 frontend/node/
 frontend/node_modules/
@@ -35,6 +38,7 @@ frontend/tests/e2e/reports
 frontend/tests/unit/coverage
 frontend/yarn-error.log
 frontend/yarn.lock
+frontend/package-lock.json
 security/target/
 selenium-debug.log
 
